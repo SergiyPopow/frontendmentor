@@ -1,7 +1,7 @@
 const bttHamb = document.querySelector('#bttHamb');
 const header = document.querySelector('.header');
 const overlay = document.querySelector('.overlay');
-
+const fadings = document.querySelectorAll('.fading');
 bttHamb.addEventListener('click', function() {
   if (header.classList.contains('open')) {
     header.classList.remove('open');
@@ -9,7 +9,10 @@ bttHamb.addEventListener('click', function() {
     overlay.classList.add('f-out');
   } else {
     header.classList.add('open');
-    overlay.classList.remove('f-out');
-    overlay.classList.add('f-in');
+    fadings.forEach(function(element){
+      element.classList.remove('f-out');
+      element.classList.add('f-in');
+    });
+    
   }
 } );
