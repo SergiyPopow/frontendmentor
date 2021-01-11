@@ -24,8 +24,14 @@
 
   &__links {
     a {
-      
+      font-size: $font-header;
+      color: $grayishBlue;
     }
+  }
+
+  &__cta {
+    font-size: $font-header;
+    color: $white;
   }
 
 }
