@@ -37,7 +37,10 @@ a, a:visited, a:hover {
 
 ////Button
 button, .button {
-  padding: 0.575rem 1.8875rem;
+  position: relative;
+  display: block;
+  padding: 0.575rem 2.1875rem;
+  bottom:6px;
   background: linear-gradient(to right, $limeGreen, $rightCyan);
   border-radius: 50px;
   border: 0;

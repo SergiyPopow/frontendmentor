@@ -47,7 +47,10 @@ a, a:visited, a:hover {
 }
 
 button, .button {
-  padding: 0.575rem 1.8875rem;
+  position: relative;
+  display: block;
+  padding: 0.575rem 2.1875rem;
+  bottom: 6px;
   background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
   background: linear-gradient(to right, #31d35c, #2bb7da);
   border-radius: 50px;
@@ -69,6 +72,30 @@ button, .button {
   }
 }
 
+.header .header__menu.open > span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header .header__menu.open > span:nth-child(2) {
+  opacity: 0;
+}
+
+.header .header__menu.open > span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.header .overlay {
+  position: fixed;
+  top: 60px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2d314d), to(transparent));
+  background-image: linear-gradient(#2d314d, transparent);
+}
+
 .header nav {
   padding: 1.0625rem 1.5rem;
 }
@@ -83,10 +110,14 @@ button, .button {
   width: 26px;
   height: 2px;
   background-color: #2d314d;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  -webkit-transform-origin: 3px 1px;
+          transform-origin: 3px 1px;
 }
 
 .header__menu > span:not(:last-child) {
-  margin-bottom: 3px;
+  margin-bottom: 5px;
 }
 
 .header__links a {
