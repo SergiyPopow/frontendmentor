@@ -1,14 +1,36 @@
 @keyframes f-in {
   from {
-    display: none;
+    visibility: hidden;
     opacity: 0;
   }
-  1% {
-    display: block;
-    opacity: 1;
+  20% {
+    visibility: visible;
+    opacity: 0;
   }
   to {
-    display: block;
     opacity: 1;
   }
+}
+
+.f-in {
+  animation: f-in 300ms ease-in-out forwards;
+}
+
+@keyframes f-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  90% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.f-out {
+  animation: f-out 300ms ease-in-out forwards;
 }

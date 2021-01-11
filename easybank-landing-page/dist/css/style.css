@@ -72,12 +72,6 @@ button, .button {
   }
 }
 
-.header.open .overlay {
-  display: block;
-  -webkit-animation: f-in 300ms ease-in-out forwards;
-          animation: f-in 300ms ease-in-out forwards;
-}
-
 .header.open .header__menu > span:first-child {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -93,7 +87,6 @@ button, .button {
 }
 
 .header .overlay {
-  display: none;
   opacity: 0;
   position: fixed;
   top: 3.75rem;
@@ -176,31 +169,69 @@ button, .button {
 
 @-webkit-keyframes f-in {
   from {
-    display: none;
+    visibility: hidden;
     opacity: 0;
   }
-  1% {
-    display: block;
-    opacity: 1;
+  20% {
+    visibility: visible;
+    opacity: 0;
   }
   to {
-    display: block;
     opacity: 1;
   }
 }
 
 @keyframes f-in {
   from {
-    display: none;
+    visibility: hidden;
     opacity: 0;
   }
-  1% {
-    display: block;
-    opacity: 1;
+  20% {
+    visibility: visible;
+    opacity: 0;
   }
   to {
-    display: block;
     opacity: 1;
   }
+}
+
+.f-in {
+  -webkit-animation: f-in 300ms ease-in-out forwards;
+          animation: f-in 300ms ease-in-out forwards;
+}
+
+@-webkit-keyframes f-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  90% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+@keyframes f-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  90% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.f-out {
+  -webkit-animation: f-out 300ms ease-in-out forwards;
+          animation: f-out 300ms ease-in-out forwards;
 }
 /*# sourceMappingURL=style.css.map */
