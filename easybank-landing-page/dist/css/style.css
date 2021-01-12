@@ -82,8 +82,8 @@ button, .button {
 }
 
 .header.open .header__spans > span:first-child {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -webkit-transform: rotate(-315deg);
+          transform: rotate(-315deg);
 }
 
 .header.open .header__spans > span:nth-child(2) {
@@ -91,8 +91,8 @@ button, .button {
 }
 
 .header.open .header__spans > span:last-child {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
 }
 
 .header .overlay {
@@ -233,8 +233,8 @@ button, .button {
 }
 
 .f-in {
-  -webkit-animation: f-in 300ms ease-in-out forwards;
-          animation: f-in 300ms ease-in-out forwards;
+  -webkit-animation: f-in 250ms ease-in-out forwards;
+          animation: f-in 250ms ease-in-out forwards;
 }
 
 @-webkit-keyframes f-out {
@@ -268,7 +268,7 @@ button, .button {
 }
 
 .f-out {
-  -webkit-animation: f-out 300ms ease-in-out forwards;
-          animation: f-out 300ms ease-in-out forwards;
+  -webkit-animation: f-out 250ms ease-in-out forwards;
+          animation: f-out 250ms ease-in-out forwards;
 }
 /*# sourceMappingURL=style.css.map */
