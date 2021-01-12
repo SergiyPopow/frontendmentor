@@ -1,5 +1,6 @@
 const bttHamb = document.querySelector('#bttHamb');
 const header = document.querySelector('.header');
+const overlay = document.querySelector('.overlay');
 const fadings = document.querySelectorAll('.fading');
 const body = document.querySelector('body');
 bttHamb.addEventListener('click', function() {

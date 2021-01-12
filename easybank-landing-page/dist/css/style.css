@@ -9,6 +9,10 @@ html {
           box-sizing: inherit;
 }
 
+h1, h2, h3 {
+  margin-top: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -57,7 +61,6 @@ a, a:visited, a:hover {
 
 button, .button {
   position: relative;
-  display: block;
   padding: 0.575rem 2.1875rem;
   bottom: 6px;
   background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
@@ -70,13 +73,13 @@ button, .button {
 }
 
 @media (max-width: 63.9375em) {
-  .hide-for-mobile {
+  .for-desktops {
     display: none;
   }
 }
 
 @media (min-width: 64em) {
-  .hide-for-desktop {
+  .for-mobiles {
     display: none;
   }
 }
@@ -270,5 +273,38 @@ button, .button {
 .f-out {
   -webkit-animation: f-out 250ms ease-in-out forwards;
           animation: f-out 250ms ease-in-out forwards;
+}
+
+.bank__img {
+  position: relative;
+  background-image: url("/images/bg-intro-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 17.5rem;
+}
+
+.bank__img::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("/images/image-mockups.png");
+  background-size: 94%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.bank__text {
+  text-align: center;
+  font-weight: 300;
+  line-height: 1.1;
+  font-size: 2.29rem;
+  color: #2d314d;
+  line-height: 1.13;
+}
+
+.bank p {
+  line-height: 1.5;
 }
 /*# sourceMappingURL=style.css.map */
