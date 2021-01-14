@@ -52,6 +52,11 @@
 
   }
 
+  &__btnfix {
+    position:relative;  
+    bottom:5px;
+  }
+
   &__menu {
     position: absolute;
     width: calc(100% - 3rem);
