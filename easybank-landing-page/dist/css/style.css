@@ -554,4 +554,33 @@ button:hover, .button:hover {
   font-size: 0.88rem;
   line-height: 0.8rem;
 }
+
+.articles {
+  background-color: #fafafa;
+}
+
+.articles__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+@media (min-width: 40em) {
+  .articles__grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 64em) {
+  .articles__grid {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.articles__img {
+  background-image: url(/images/image-currency.jpg);
+}
 /*# sourceMappingURL=style.css.map */
