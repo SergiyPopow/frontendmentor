@@ -14,8 +14,6 @@
   }
 
   &__slinks {
-    display: flex;
-    flex-direction: column;
     margin-bottom: 1.87rem;
     a:not(:last-child) {
       display: inline-block;
@@ -24,13 +22,17 @@
   }
 
   &__flinks{
+    display: flex;
+    flex-direction: column;
+    &.fcollum1 {
+    }
+
+    &.fcollum2 {
+      margin-bottom: 1.87rem;
+    }
     
   }
-  &.fcollum1 {
-  }
-  &.fcollum2 {
-    margin-bottom: 1.87rem;
-  }
+ 
   &__cta {
     a.button {
     margin-bottom: 1.87rem;
