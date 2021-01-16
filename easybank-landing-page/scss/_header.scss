@@ -1,6 +1,5 @@
 .header {
-  margin-bottom: -0.85rem;
-  
+  padding-top: 0.5rem;
 &.open {
   .header__spans {
   > span:first-child {
@@ -83,7 +82,8 @@
       position: relative;
       font-size: $font-header;
       color: $grayishBlue;
-      transition: color 300ms ease-in-out;
+      transition: color 250ms ease-in-out;
+      padding-bottom: 1rem;
 
       &:not(:last-child){
         margin-right: 20px;

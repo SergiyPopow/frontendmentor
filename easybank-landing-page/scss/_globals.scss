@@ -139,7 +139,7 @@ button, .button {
   cursor: pointer;
   color: $white;
   font-weight: 400;
-  transition: opacity 300ms ease-in-out;
+  transition: opacity 250ms ease-in-out;
 
   &:hover {
     opacity: 0.85;
