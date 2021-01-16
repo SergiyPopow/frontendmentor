@@ -195,6 +195,10 @@ button:hover, .button:hover {
   }
 }
 
+.header {
+  margin-bottom: -0.85rem;
+}
+
 .header.open .header__spans > span:first-child {
   -webkit-transform: rotate(-315deg);
           transform: rotate(-315deg);
@@ -647,9 +651,9 @@ button:hover, .button:hover {
         grid-template-columns: 2fr 1fr 1fr 3fr;
     -ms-grid-rows: 1fr auto;
         grid-template-rows: 1fr auto;
+    gap: 1rem;
         grid-template-areas: "logo flinks1 flinks2 cta" "slinks flinks1 flinks2 cprgt";
     justify-items: start;
-    gap: 1rem;
   }
 }
 
@@ -689,7 +693,7 @@ button:hover, .button:hover {
 }
 
 .footer__slinks a:not(:last-child) {
-  margin-right: 1rem;
+  margin-right: 0.6rem;
 }
 
 .footer__slinks a {
@@ -698,8 +702,8 @@ button:hover, .button:hover {
 }
 
 .footer__slinks a svg path {
-  -webkit-transition: fill 150ms ease-in-out;
-  transition: fill 150ms ease-in-out;
+  -webkit-transition: fill 120ms ease-in-out;
+  transition: fill 120ms ease-in-out;
 }
 
 .footer__slinks a:hover svg path {
