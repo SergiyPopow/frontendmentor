@@ -12,7 +12,7 @@ html {
 h1, h2, h3 {
   margin-top: 0;
   font-weight: 300;
-  line-height: 1.15;
+  line-height: 1.35;
   color: #2d314d;
 }
 
@@ -40,7 +40,7 @@ h2 {
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.5rem;
   margin-bottom: 2.25rem;
 }
 
@@ -544,9 +544,9 @@ button:hover, .button:hover {
 }
 
 .why__title {
-  font-size: 1.24rem;
+  font-size: 1.1rem;
   font-weight: 300;
-  line-height: 1.3em;
+  line-height: 1.5em;
   color: #2d314d;
   margin-bottom: 1.5rem;
 }
@@ -559,8 +559,8 @@ button:hover, .button:hover {
 }
 
 .why__description {
-  font-size: 0.88rem;
-  line-height: 0.8rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .articles {
@@ -630,12 +630,13 @@ button:hover, .button:hover {
 .articles__title {
   font-size: 1.06rem;
   color: #2d314d;
-  line-height: 1.3rem;
+  line-height: 1.1rem;
   margin-bottom: 0.5rem;
 }
 
 .articles__description {
   font-size: 0.81rem;
+  line-height: 1.5rem;
 }
 
 .footer {
@@ -781,7 +782,7 @@ button:hover, .button:hover {
 }
 
 .footer__cprgt {
-  font-size: 0.8375rem;
+  font-size: 0.8475rem;
   color: #9698a6;
 }
 
