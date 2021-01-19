@@ -10,7 +10,7 @@ html {
 h1, h2, h3 {
   margin-top: 0;
   font-weight: 300;
-  line-height: 1.15;
+  line-height: 1.35;
   color: $darkBlue;
 }
 
@@ -129,10 +129,10 @@ a, a:visited, a:hover {
 
 ////Button
 button, .button {
+  position: relative;
   display: inline-block;
   font-size: $font-header;
   padding: 0.475rem 2.1875rem;
-  bottom:6px;
   background: linear-gradient(to right, $limeGreen, $rightCyan);
   border-radius: 50px;
   border: 0;
@@ -140,7 +140,7 @@ button, .button {
   color: $white;
   font-weight: 400;
   transition: opacity 250ms ease-in-out;
-
+  overflow: hidden;
   &:hover {
     opacity: 0.85;
   }

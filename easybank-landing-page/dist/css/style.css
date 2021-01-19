@@ -159,10 +159,10 @@ a, a:visited, a:hover {
 }
 
 button, .button {
+  position: relative;
   display: inline-block;
   font-size: 0.875rem;
   padding: 0.475rem 2.1875rem;
-  bottom: 6px;
   background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
   background: linear-gradient(to right, #31d35c, #2bb7da);
   border-radius: 50px;
@@ -172,6 +172,7 @@ button, .button {
   font-weight: 400;
   -webkit-transition: opacity 250ms ease-in-out;
   transition: opacity 250ms ease-in-out;
+  overflow: hidden;
 }
 
 button:hover, .button:hover {
